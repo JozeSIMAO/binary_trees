@@ -7,8 +7,10 @@
  */
 size_t binary_tree_depth(const binary_tree_t *tree)
 {
-    if (tree == NULL){
-        return (0); /*If tree is NULL, return 0*/
-    }
-    return (binary_tree_depth(tree->parent) + 1);  /* This will recursively calculate depth by adding 1 for each level from the node to the root */
+	if (tree == NULL)
+	{
+		return (0);
+	}
+
+	return (binary_tree_depth(tree->parent) + 1);
 }
